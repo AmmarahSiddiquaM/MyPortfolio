@@ -16,60 +16,43 @@ export const Experiments = () => {
       }}
     >
       <Text weight="bold" size="xl">
-        PROTOTYPES AND EXPERIMENTS
+        EXPERIMENTS
       </Text>
       <Text mt={spacing.xxl} sx={{ textAlign: "center", mb: spacing.l }}>
-        Im my free time I like to build complex experiences in web and mobiles.
+        Some of the work I did in my free time using React and React Native.
         <br />
         Watch this space I would be uploading few more soon 👇
       </Text>
       <VideoPlayer
         title="Tinder Swipe"
-        description="Implementaion of swipeable cards"
+        description="Swipe right to show interest or left if uninterested. Mark as favourite by swiping up."
         videoSrc={videos.tinder1}
         color="#fee9e2"
       />
       <VideoPlayer
         title="Shared Element Transitions"
-        description="Implementaion of shared element transition"
+        description="Two different screens share an image to maintain the focus and experience."
         videoSrc={videos.tinder2}
         color="#e6daea"
       />
       <VideoPlayer
         title="Netflix Clone"
-        description="Netflix UI clone built using React JS"
+        description="Netflix UI clone built using React."
         videoSrc={videos.netflix}
         color="#f9f7c7"
       />
       <VideoPlayer
         title="Credit Score Indicator"
-        description="Credit score indicator animation"
+        description="Donut Chart implemention using react-native-svg and animating the indicator to show the score."
         videoSrc={videos.creditScore}
         color="#ddeeff"
       />
       <VideoPlayer
         title="Bottom Tab Animation"
-        description="Bottom tab text animation"
+        description="CRED's UI inspired Bottom Tab text animation with delay in each character."
         videoSrc={videos.cred}
         color="#daf6f1"
       />
-
-      {/* <video
-        src={videos.tinder2}
-        style={{ width: 820, height: 730, objectFit: "cover" }}
-      />
-      <video
-        src={videos.creditScore}
-        style={{ width: 820, height: 730, objectFit: "cover" }}
-      />
-      <video
-        src={videos.netflix}
-        style={{ width: 820, height: 730, objectFit: "cover" }}
-      />
-      <video
-        src={videos.leasePlan}
-        style={{ width: 820, height: 730, objectFit: "cover" }}
-      /> */}
     </FullHeightContainer>
   );
 };

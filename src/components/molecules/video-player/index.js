@@ -42,13 +42,16 @@ export const VideoPlayer = ({ title, description, color, videoSrc }) => {
         sx={{
           backgroundColor: color,
           p: spacing.l,
+          maxWidth: 600,
           width: "fit-content",
         }}
       >
         <Text weight="bold" size="xxxl" variant="secondary">
           {title}
         </Text>
-        <Text mb={spacing.l}>{description}</Text>
+        <Text mb={spacing.l} size="xl" sx={{ maxWidth: 440 }}>
+          {description}
+        </Text>
         <video
           autoPlay
           ref={videoRef}
