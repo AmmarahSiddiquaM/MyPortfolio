@@ -1,13 +1,49 @@
+@font-face {
+  font-family: "Calibri";
+  font-weight: 400;
+  src: local("Calibri-Regular"),
+    url("./assets/fonts/Calibri/Calibri-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibri";
+  font-weight: 300;
+  src: local("Calibri-Light"),
+    url("./assets/fonts/Calibri/Calibri-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibri";
+  font-weight: 700;
+  src: local("Calibri-Bold"),
+    url("./assets/fonts/Calibri/Calibri-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NoeDisplay";
+  font-weight: 400;
+  src: local("NoeDisplay-Bold"),
+    url("./assets/fonts/NoeDisplay/NoeDisplay-Bold.ttf") format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Calibri", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#nav-mobile .nav-active > p {
+  color: #000;
+}
+
+.nav-active > p {
+  color: #e82677;
 }
